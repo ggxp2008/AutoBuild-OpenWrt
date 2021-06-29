@@ -33,6 +33,8 @@ jobs:
     - name: Initialization environment
       env:
         DEBIAN_FRONTEND: noninteractive
+        UPLOAD_RELEASE: true
+        UPLOAD_WERANSFER: true
       run: |
         docker rmi `docker images -q`
         echo "Deleting files, please wait ..."
