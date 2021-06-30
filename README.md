@@ -24,6 +24,7 @@ You could edit and enable "Sync Code" YAML file to let your forked repo keep upd
   - The build starts automatically. Progress can be viewed on the Actions page.
   - When the build is complete, click the `Artifacts` button in the upper right corner of the Actions page to download the binaries.
   - Default Web Admin IP: `192.168.5.1`, username `root`，password `password`
+  - Docker container build command : docker build -t openwrt_x86_64 .
 
 **3. Sync Code**
   - Uncomment 'push-branches-master' 3 lines under **`On`** section and commit changes to let the script sync the code once for you.
